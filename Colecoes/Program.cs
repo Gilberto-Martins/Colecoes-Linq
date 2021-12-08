@@ -52,21 +52,58 @@ namespace Colecoes
 
             //Ordenado Arrays
 
-            //bubble sort
             int[] array = new int[5] {5, 3, 8, 1, 9};
+            int[] arrayCopy = new int[10];
 
             OperacoesArray op = new OperacoesArray();
 
+            
+
+            int valor = 8;
+            bool todos = op.TodosMaior(array, valor);
+
             Console.Clear();
-            
-            Console.WriteLine("Array original");
-            op.ImprimirArray(array);
 
-            op.OrdenarBubbleSort(ref array);
+            if(todos)
+            {
+                Console.WriteLine("Todos maior que {0}", valor);
+            }
+            else
+            {
+                Console.WriteLine("Nem todos maior que {0}", valor);
+            }
 
-            Console.WriteLine("Array ordenado");
-            op.ImprimirArray(array);
+            //bool existe = op.Existe(array, valor);
+
+            //Console.Clear();
+
+            //if(existe)
+            //{
+            //    Console.WriteLine("existe");
+            //}
+            //else
+            //{
+            //    Console.WriteLine("não exite");
+            //}
             
+            //Console.WriteLine("Array original");
+            //op.ImprimirArray(array);
+
+            //op.OrdenarBubbleSort(ref array);
+            //op.Ordenar(ref array);
+
+            //Console.WriteLine("Array ordenado");
+            //op.ImprimirArray(array);
+
+            // Console.WriteLine("Array antes de copiar:");
+            // op.ImprimirArray(arrayCopy);
+
+            // op.Copiar(ref array, ref arrayCopy);
+            // Console.WriteLine(" ");
+            // Console.WriteLine("Array copiado:");
+            // op.ImprimirArray(arrayCopy);
+
+
 
         }
     }

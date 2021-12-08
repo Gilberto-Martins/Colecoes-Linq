@@ -20,7 +20,13 @@ var elemento = array[0] <br>
 array[0] = 42 <br>
 
 <h3>Ordenando Arrays</h3> <br>
-
+<ul>
+    <li>Bubble Sort</li>
+    <li>Classe Array atraves do metodo sort</li>
+    <li>Copiando Array pela class Array usando o metodo copy</li>
+    <li>Verificando elemento existente usando o metodo Exists</li>
+    <li>Verificando elementos usando TrueForAll</li>
+</ul>
 
 ## 
 
