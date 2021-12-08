@@ -19,6 +19,9 @@ int[] array = new int []{42,75,74,61} <br>
 var elemento = array[0] <br>
 array[0] = 42 <br>
 
+<h3>Ordenando Arrays</h3> <br>
+
+
 ## 
 
 # Coleções genéricas

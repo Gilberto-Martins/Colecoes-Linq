@@ -1,4 +1,5 @@
 ﻿using System;
+using Colecoes.Helper;
 
 namespace Colecoes
 {
@@ -6,6 +7,7 @@ namespace Colecoes
     {
         static void Main(string[] args)
         {
+            /*
             int[,] matriz = new int[4, 2]
             {
                 {8, 8},
@@ -22,6 +24,7 @@ namespace Colecoes
                     Console.WriteLine(matriz[i, a]);
                 }
             }
+            */
 
 
 
@@ -44,6 +47,27 @@ namespace Colecoes
                 Console.WriteLine(item);
             }
             */
+
+
+
+            //Ordenado Arrays
+
+            //bubble sort
+            int[] array = new int[5] {5, 3, 8, 1, 9};
+
+            OperacoesArray op = new OperacoesArray();
+
+            Console.Clear();
+            
+            Console.WriteLine("Array original");
+            op.ImprimirArray(array);
+
+            op.OrdenarBubbleSort(ref array);
+
+            Console.WriteLine("Array ordenado");
+            op.ImprimirArray(array);
+            
+
         }
     }
 }
