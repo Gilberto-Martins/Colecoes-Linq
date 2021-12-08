@@ -13,7 +13,7 @@ Pode ser declarado um Array de 3 formas: <br>
 <strong>3. string[] nomes = {"Jan","Fev"};</strong><br>
 
 <h3>Disposição do Array</h3> <br>
-Índice: éa posição de um determinado valor de um array, sempre começando com zero. <br>
+Índice: é a posição de um determinado valor de um array, sempre começando com zero. <br>
 
 int[] array = new int []{42,75,74,61} <br>
 var elemento = array[0] <br>
@@ -26,6 +26,9 @@ array[0] = 42 <br>
     <li>Copiando Array pela class Array usando o metodo copy</li>
     <li>Verificando elemento existente usando o metodo Exists</li>
     <li>Verificando elementos usando TrueForAll</li>
+    <li>Procurando elemento usando o metodo Find</li>
+    <li>Encontrando o índece de um valor usando o IndexOf</li>
+    <li>Redimensionando Array</li>
 </ul>
 
 ## 

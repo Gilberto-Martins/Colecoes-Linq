@@ -60,18 +60,46 @@ namespace Colecoes
             
 
             int valor = 8;
-            bool todos = op.TodosMaior(array, valor);
 
             Console.Clear();
 
-            if(todos)
+            int indece = op.ObterIndece(array, valor);
+
+            if(indece > -1)
             {
-                Console.WriteLine("Todos maior que {0}", valor);
+                Console.WriteLine("O indece do elelemto {0} é {1}",valor, indece);
             }
             else
             {
-                Console.WriteLine("Nem todos maior que {0}", valor);
+                Console.WriteLine("O valor não existente");
             }
+
+            // int valorAchando = op.ObterValor(array, valor);
+
+            // if(valorAchando > 0)
+            // {
+            //     Console.WriteLine("Encontrei o valor");
+            // }
+            // else
+            // {
+            //     Console.WriteLine("Valor não encontrado");
+            // }
+
+
+
+
+            // bool todos = op.TodosMaior(array, valor);
+
+            // Console.Clear();
+
+            // if(todos)
+            // {
+            //     Console.WriteLine("Todos maior que {0}", valor);
+            // }
+            // else
+            // {
+            //     Console.WriteLine("Nem todos maior que {0}", valor);
+            // }
 
             //bool existe = op.Existe(array, valor);
 
