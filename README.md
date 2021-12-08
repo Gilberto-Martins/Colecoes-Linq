@@ -5,13 +5,13 @@ Fundamentos de Coleções e Linq com .NET
 
 # Arrays e suas Manipulações
 
-Array é uma estrutura de dados que armazena valores do mesmo tipo, com um tamanho fixo. <br>
-
-Pode ser declarado um Array de 3 formas: <br>
-<strong>1. int[] array = new int [4];</strong> <br>
-<strong>2. int[] array = new int []{42,75,74,61};</strong><br>
-<strong>3. string[] nomes = {"Jan","Fev"};</strong><br>
-
+<p>
+    Array é uma estrutura de dados que armazena valores do mesmo tipo, com um tamanho fixo. <br>
+    Pode ser declarado um Array de 3 formas: <br> <br>
+    <strong>1. int[] array = new int [4];</strong> <br>
+    <strong>2. int[] array = new int []{42,75,74,61};</strong><br>
+    <strong>3. string[] nomes = {"Jan","Fev"};</strong> <br>
+</p>
 <h3>Disposição do Array</h3> <br>
 Índice: é a posição de um determinado valor de um array, sempre começando com zero. <br>
 
@@ -19,7 +19,7 @@ int[] array = new int []{42,75,74,61} <br>
 var elemento = array[0] <br>
 array[0] = 42 <br>
 
-<h3>Ordenando Arrays</h3> <br>
+<h3>Ordenando Arrays</h3>
 <ul>
     <li>Bubble Sort</li>
     <li>Classe Array atraves do metodo sort</li>
@@ -35,6 +35,17 @@ array[0] = 42 <br>
 ## 
 
 # Coleções genéricas
+<p>
+    No C#, existem classes de coleções que agrupam valores, e essas classes <br>
+    são padronizadas para as operações mais comuns, como: <br><br>
+</p>
+
+<ul>
+    <li>Ordenação</li>
+    <li>Obter valor por índice</li>
+    <li>Obter valor com expressões</li>
+    <li>Trabalhar com tamanhos dinãmicos</li>
+</ul>
 
 ##
 
