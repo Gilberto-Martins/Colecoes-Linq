@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using Colecoes.Helper;
 
 namespace Colecoes
@@ -7,6 +8,40 @@ namespace Colecoes
     {
         static void Main(string[] args)
         {
+            OperacoesList op = new OperacoesList();
+            List<string> estados = new List<string>{"SP","MG","PE"};
+            string[] estadosArray = new string[2] {"SC","MT"};
+
+            // estados.Add("SP");
+            // estados.Add("MG");
+            // estados.Add("PE");
+
+            Console.Clear();
+            Console.WriteLine("Quantidade de ele mentos na lista: {0}",estados.Count);
+
+            
+
+            op.ImprimirListString(estados);
+            Console.WriteLine("---------");
+            // Console.WriteLine("------------");
+            // estados.Remove("MG");
+            // op.ImprimirListString(estados);
+
+            //estados.AddRange(estadosArray);
+            estados.Insert(1, "RJ");
+
+            op.ImprimirListString(estados);
+            
+            
+            
+            
+            
+            
+            
+            // foreach (var item in estados)
+            // {
+            //     Console.WriteLine(item);
+            // }
             /*
             int[,] matriz = new int[4, 2]
             {
@@ -52,12 +87,12 @@ namespace Colecoes
 
             //Ordenado Arrays
 
-            int[] array = new int[5] {5, 3, 8, 1, 9};
-            int[] arrayCopy = new int[10];
+            // int[] array = new int[5] {5, 3, 8, 1, 9};
+            // int[] arrayCopy = new int[10];
 
-            OperacoesArray op = new OperacoesArray();
+            // OperacoesArray op = new OperacoesArray();
 
-            string[] arrayString = op.ConverteParaArrauString(array);
+            // string[] arrayString = op.ConverteParaArrauString(array);
 
             
 
