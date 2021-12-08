@@ -28,7 +28,8 @@ array[0] = 42 <br>
     <li>Verificando elementos usando TrueForAll</li>
     <li>Procurando elemento usando o metodo Find</li>
     <li>Encontrando o índece de um valor usando o IndexOf</li>
-    <li>Redimensionando Array</li>
+    <li>Redimensionando Array em tempo de execução usando o Resize</li>
+    <li>Convertendo um Array de tipos diferentes usando o ConvertAll</li>
 </ul>
 
 ## 

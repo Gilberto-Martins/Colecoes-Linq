@@ -57,22 +57,30 @@ namespace Colecoes
 
             OperacoesArray op = new OperacoesArray();
 
+            string[] arrayString = op.ConverteParaArrauString(array);
+
             
 
-            int valor = 8;
+            //int valor = 8;
 
-            Console.Clear();
+            // Console.Clear();
 
-            int indece = op.ObterIndece(array, valor);
+            // Console.WriteLine("Capacidade atural do array {0}",array.Length);
 
-            if(indece > -1)
-            {
-                Console.WriteLine("O indece do elelemto {0} é {1}",valor, indece);
-            }
-            else
-            {
-                Console.WriteLine("O valor não existente");
-            }
+            // op.RedimencionarArray(ref array, array.Length * 2);
+
+            // Console.WriteLine("Nova Capacidade do array {0}", array.Length);
+
+            // int indece = op.ObterIndece(array, valor);
+
+            // if(indece > -1)
+            // {
+            //     Console.WriteLine("O indece do elelemto {0} é {1}",valor, indece);
+            // }
+            // else
+            // {
+            //     Console.WriteLine("O valor não existente");
+            // }
 
             // int valorAchando = op.ObterValor(array, valor);
 

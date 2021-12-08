@@ -56,5 +56,15 @@ namespace Colecoes.Helper
         {
             return Array.IndexOf(array, valor);
         }
+
+        public void RedimencionarArray(ref int[] array, int valor)
+        {
+            Array.Resize(ref array, valor);
+        }
+
+        public string[] ConverteParaArrauString(int[] array)
+        {
+            return Array.ConvertAll(array, elemento => elemento.ToString());
+        }
     }
 }
