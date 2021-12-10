@@ -8,29 +8,73 @@ namespace Colecoes
     {
         static void Main(string[] args)
         {
-            OperacoesList op = new OperacoesList();
-            List<string> estados = new List<string>{"SP","MG","PE"};
-            string[] estadosArray = new string[2] {"SC","MT"};
+            //Stack
+
+            Stack<string> pilhaLivros = new Stack<string>();
+
+            pilhaLivros.Push(".NET"); // metodo push adiciona
+            pilhaLivros.Push("DDD");
+            pilhaLivros.Push("Codigo limpo");
+
+
+            Console.Clear();
+            Console.WriteLine($"Livros para ler: {pilhaLivros.Count}");
+            while (pilhaLivros.Count > 0)
+            {
+                Console.WriteLine("------------------------------");
+                Console.WriteLine($"Proximo livro para leitura: {pilhaLivros.Peek()}");
+                Console.WriteLine($"{pilhaLivros.Pop()} Lido com sucesso"); // metodo pop remove
+                Console.WriteLine("------------------------------");
+            }
+
+            Console.WriteLine($"Livros para ler: {pilhaLivros.Count}");
+
+
+
+
+
+            //Fila
+            // Queue<string> fila = new Queue<string>();
+
+            // Console.Clear();
+            // fila.Enqueue("Fulano"); // metodo Enqueue adiciona elementos na fila
+            // fila.Enqueue("Eduarda");
+            // fila.Enqueue("Paula");
+            // fila.Enqueue("Neto");
+
+            // Console.WriteLine($"Pessoas na Fila: {fila.Count}");
+            // while (fila.Count > 0) // metodo Count é o tamanho da fila
+            // {
+            //     Console.WriteLine($"Vez de : {fila.Peek()}"); // metodo Peek pretorna o primeiro elemento da fila
+            //     Console.WriteLine($"{fila.Dequeue()} atendido");// metodo Dequeue vai pega o primeiro elemento da fila retorna e removela
+            // }
+
+            // Console.WriteLine($"Pessoas na fila: {fila.Count}");
+
+
+            // OperacoesList op = new OperacoesList();
+            // List<string> estados = new List<string>{"SP","MG","PE"};
+            // string[] estadosArray = new string[2] {"SC","MT"};
 
             // estados.Add("SP");
             // estados.Add("MG");
             // estados.Add("PE");
 
-            Console.Clear();
-            Console.WriteLine("Quantidade de ele mentos na lista: {0}",estados.Count);
+            // Console.Clear();
+            // Console.WriteLine("Quantidade de ele mentos na lista: {0}",estados.Count);
 
             
 
-            op.ImprimirListString(estados);
-            Console.WriteLine("---------");
+            // op.ImprimirListString(estados);
+            // Console.WriteLine("---------");
             // Console.WriteLine("------------");
             // estados.Remove("MG");
             // op.ImprimirListString(estados);
 
             //estados.AddRange(estadosArray);
-            estados.Insert(1, "RJ");
+            // estados.Insert(1, "RJ");
 
-            op.ImprimirListString(estados);
+            // op.ImprimirListString(estados);
             
             
             

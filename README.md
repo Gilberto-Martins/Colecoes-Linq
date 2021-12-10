@@ -69,6 +69,14 @@ Fundamentos de Coleções e Linq com .NET
 
 # Coleções específicas
 
+<p>
+    As coleçoes específicas implementa regras para sua ordem de acesso e manipulação de seus elementos, são elas: <br><br>
+    <ul>
+        <il>Qeue (Fila): Obedece a ordem FIFO (Frist In Frist Out)</il>
+        <il>Stack (Pilha): Obedece a orde LIFO (Last In First Out)</il>
+    </ul>
+</p>
+
 ##
 
 # Dicionários
