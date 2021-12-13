@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using Colecoes.Helper;
 
 namespace Colecoes
@@ -8,75 +9,110 @@ namespace Colecoes
     {
         static void Main(string[] args)
         {
-            //o primeiro string é a chave o segundo é o valor
-            Dictionary<string, string> estados = new Dictionary<string, string>();
-            estados.Add("PE", "Pernambuco");
-            estados.Add("SP", "São Paulo");
-            estados.Add("RJ", "Rio De Janero");
-            estados.Add("MG", "Minas Gerais");
-            estados.Add("BA", "Bahia");
+            //LINQ
+            int[] arrayNumeros = new int[10]{ 100, 1, 4, 8, 15, 19, 0, 19, 4, 100 };
+
+            var mine = arrayNumeros.Min();//minimo
+            var max = arrayNumeros.Max();//maximo
+            var medio = arrayNumeros.Average();//media
+            var soma = arrayNumeros.Sum();//somar todos os valores do array
+            var arrayUnico = arrayNumeros.Distinct().ToArray();//ira oegar o valor uma unica ves, não ira pegar repetidos
 
             Console.Clear();
-            // foreach (KeyValuePair<string, string> item in estados)
-            // {
-            //     Console.WriteLine($"Chave: {item.Key}, Valor: {item.Value}");
-            // }
+            Console.WriteLine($"Valor minimo: {mine}");
+            Console.WriteLine($"Valor maximo: {max}");
+            Console.WriteLine($"Valor medio: {medio}");
+            Console.WriteLine($"Soma dos valores: {soma}");
+            Console.WriteLine($"Array original: {string.Join(",", arrayNumeros)}");
+            Console.WriteLine($"Array distinto: {string.Join(",",arrayUnico)}");
+            
 
-            // Console.WriteLine("----------------------------");
-            // Console.WriteLine("Digite 1 para alterar o valor de PE");
-            // Console.WriteLine("Digite 2 Para alterar o valor de SP");
-            // Console.WriteLine("Digite 3 para alterar o valor de RJ");
-            // Console.WriteLine("Digite 4 para alterar o valor de MG");
-            // Console.WriteLine("Digite 5 para alterar o valor de BA");
-            // int valor = 0;
-            // valor = Convert.ToInt32(Console.ReadLine());
 
-            // switch (valor)
-            // {
-            //     case 1:
-            //         estados["PE"] = "Recife";
-            //         break;
+            // var numerosPar = 
+            //         from num in arrayNumeros
+            //         where num % 2 == 0
+            //         orderby num
+            //         select num;
+            
+
+            // var numerosParMenor = arrayNumeros.Where(x => x % 2 == 0).OrderBy(x => x).ToList();
+
+            // Console.WriteLine("Numeros pares query: "+ string.Join(",", numerosPar));
+            // Console.WriteLine("Numeros pares metodo: "+ string.Join(",", numerosParMenor));
+
+
+
+
+
+            //o primeiro string é a chave o segundo é o valor
+            // Dictionary<string, string> estados = new Dictionary<string, string>();
+            // estados.Add("PE", "Pernambuco");
+            // estados.Add("SP", "São Paulo");
+            // estados.Add("RJ", "Rio De Janero");
+            // estados.Add("MG", "Minas Gerais");
+            // estados.Add("BA", "Bahia");
+
+            // Console.Clear();
+            // // foreach (KeyValuePair<string, string> item in estados)
+            // // {
+            // //     Console.WriteLine($"Chave: {item.Key}, Valor: {item.Value}");
+            // // }
+
+            // // Console.WriteLine("----------------------------");
+            // // Console.WriteLine("Digite 1 para alterar o valor de PE");
+            // // Console.WriteLine("Digite 2 Para alterar o valor de SP");
+            // // Console.WriteLine("Digite 3 para alterar o valor de RJ");
+            // // Console.WriteLine("Digite 4 para alterar o valor de MG");
+            // // Console.WriteLine("Digite 5 para alterar o valor de BA");
+            // // int valor = 0;
+            // // valor = Convert.ToInt32(Console.ReadLine());
+
+            // // switch (valor)
+            // // {
+            // //     case 1:
+            // //         estados["PE"] = "Recife";
+            // //         break;
                 
-            //     case 2:
-            //         estados["SP"] = "Ribeirão Preto";
-            //         break;
+            // //     case 2:
+            // //         estados["SP"] = "Ribeirão Preto";
+            // //         break;
 
-            //     case 3:
-            //         estados["RJ"] = "Petrópolis";
-            //         break;
+            // //     case 3:
+            // //         estados["RJ"] = "Petrópolis";
+            // //         break;
 
-            //     case 4:
-            //         estados["MG"] = "Belo Horizonte";
-            //         break;
+            // //     case 4:
+            // //         estados["MG"] = "Belo Horizonte";
+            // //         break;
                 
-            //     case 5:
-            //         estados["BA"] = "Salvador";
-            //         break;
+            // //     case 5:
+            // //         estados["BA"] = "Salvador";
+            // //         break;
 
-            //     default:
-            //         Console.WriteLine("Opção não encontrada");
-            //         break;
-            // }
-            // Console.WriteLine("----------------------------");
+            // //     default:
+            // //         Console.WriteLine("Opção não encontrada");
+            // //         break;
+            // // }
+            // // Console.WriteLine("----------------------------");
 
-            // foreach (KeyValuePair<string, string> item in estados)
+            // // foreach (KeyValuePair<string, string> item in estados)
+            // // {
+            // //     Console.WriteLine($"Chave: {item.Key}, Valor: {item.Value}");
+            // // }
+            // // Console.WriteLine();
+
+            // string valor = "SC";
+
+            // // var test = estados["SC"];
+
+            // if(estados.TryGetValue(valor, out string estadoEncontrado))
             // {
-            //     Console.WriteLine($"Chave: {item.Key}, Valor: {item.Value}");
+            //     Console.WriteLine(estadoEncontrado);
             // }
-            // Console.WriteLine();
-
-            string valor = "SC";
-
-            // var test = estados["SC"];
-
-            if(estados.TryGetValue(valor, out string estadoEncontrado))
-            {
-                Console.WriteLine(estadoEncontrado);
-            }
-            else
-            {
-                Console.WriteLine($"Chave {estadoEncontrado} não existe no dicionário.");
-            }
+            // else
+            // {
+            //     Console.WriteLine($"Chave {estadoEncontrado} não existe no dicionário.");
+            // }
 
 
             // Console.WriteLine("Removendo valor de BA");

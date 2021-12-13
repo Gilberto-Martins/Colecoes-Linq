@@ -82,8 +82,8 @@ Fundamentos de Coleções e Linq com .NET
 # Dicionários
 <p>
     <ul>
-    <li>Um dicionário é uma coleção de chave e valor, permitindo que você recupere rapidamente <br>seus itens baseado em sua chave.</li>
-    <li>O dicionário armazena a sua chave em hash.</li>
+        <li>Um dicionário é uma coleção de chave e valor, permitindo que você recupere rapidamente <br>seus itens baseado em sua chave.</li>
+        <li>O dicionário armazena a sua chave em hash.</li>
     </ul>
 </p>
 <h3>Criando um dicionário:</h3>
@@ -91,7 +91,18 @@ Fundamentos de Coleções e Linq com .NET
     Dictionary< string, string> estados = new Dictionary< string, string>()
 </p>
 
-
 ##
 
 # Operações LINQ
+<p>
+    O Language-Integrated Query (LINQ) é uma maneira de você utilizar uma sintaxe de consulta <br>padronizada par coleções de objetos.
+    <br>
+    Exemplo: int[] numbers = { 5, 10, 8, 3 ,6, 12 }; <br><br>
+    IEnumerable< int> numQuery1 = <br>
+    From num in numbers <br>
+    where num % 2 == 0 <br>
+    orderby num <br>
+    select num; <br><br>
+
+    IEnumerable< int> numQuery2 = numbers.Where(num = > num % 2 == 0).OrderBy(n => n);
+</p>
