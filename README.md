@@ -80,6 +80,17 @@ Fundamentos de Coleções e Linq com .NET
 ##
 
 # Dicionários
+<p>
+    <ul>
+    <li>Um dicionário é uma coleção de chave e valor, permitindo que você recupere rapidamente <br>seus itens baseado em sua chave.</li>
+    <li>O dicionário armazena a sua chave em hash.</li>
+    </ul>
+</p>
+<h3>Criando um dicionário:</h3>
+<p>
+    Dictionary< string, string> estados = new Dictionary< string, string>()
+</p>
+
 
 ##
 

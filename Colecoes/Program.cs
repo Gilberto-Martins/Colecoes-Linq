@@ -8,26 +8,110 @@ namespace Colecoes
     {
         static void Main(string[] args)
         {
-            //Stack
-
-            Stack<string> pilhaLivros = new Stack<string>();
-
-            pilhaLivros.Push(".NET"); // metodo push adiciona
-            pilhaLivros.Push("DDD");
-            pilhaLivros.Push("Codigo limpo");
-
+            //o primeiro string é a chave o segundo é o valor
+            Dictionary<string, string> estados = new Dictionary<string, string>();
+            estados.Add("PE", "Pernambuco");
+            estados.Add("SP", "São Paulo");
+            estados.Add("RJ", "Rio De Janero");
+            estados.Add("MG", "Minas Gerais");
+            estados.Add("BA", "Bahia");
 
             Console.Clear();
-            Console.WriteLine($"Livros para ler: {pilhaLivros.Count}");
-            while (pilhaLivros.Count > 0)
+            // foreach (KeyValuePair<string, string> item in estados)
+            // {
+            //     Console.WriteLine($"Chave: {item.Key}, Valor: {item.Value}");
+            // }
+
+            // Console.WriteLine("----------------------------");
+            // Console.WriteLine("Digite 1 para alterar o valor de PE");
+            // Console.WriteLine("Digite 2 Para alterar o valor de SP");
+            // Console.WriteLine("Digite 3 para alterar o valor de RJ");
+            // Console.WriteLine("Digite 4 para alterar o valor de MG");
+            // Console.WriteLine("Digite 5 para alterar o valor de BA");
+            // int valor = 0;
+            // valor = Convert.ToInt32(Console.ReadLine());
+
+            // switch (valor)
+            // {
+            //     case 1:
+            //         estados["PE"] = "Recife";
+            //         break;
+                
+            //     case 2:
+            //         estados["SP"] = "Ribeirão Preto";
+            //         break;
+
+            //     case 3:
+            //         estados["RJ"] = "Petrópolis";
+            //         break;
+
+            //     case 4:
+            //         estados["MG"] = "Belo Horizonte";
+            //         break;
+                
+            //     case 5:
+            //         estados["BA"] = "Salvador";
+            //         break;
+
+            //     default:
+            //         Console.WriteLine("Opção não encontrada");
+            //         break;
+            // }
+            // Console.WriteLine("----------------------------");
+
+            // foreach (KeyValuePair<string, string> item in estados)
+            // {
+            //     Console.WriteLine($"Chave: {item.Key}, Valor: {item.Value}");
+            // }
+            // Console.WriteLine();
+
+            string valor = "SC";
+
+            // var test = estados["SC"];
+
+            if(estados.TryGetValue(valor, out string estadoEncontrado))
             {
-                Console.WriteLine("------------------------------");
-                Console.WriteLine($"Proximo livro para leitura: {pilhaLivros.Peek()}");
-                Console.WriteLine($"{pilhaLivros.Pop()} Lido com sucesso"); // metodo pop remove
-                Console.WriteLine("------------------------------");
+                Console.WriteLine(estadoEncontrado);
+            }
+            else
+            {
+                Console.WriteLine($"Chave {estadoEncontrado} não existe no dicionário.");
             }
 
-            Console.WriteLine($"Livros para ler: {pilhaLivros.Count}");
+
+            // Console.WriteLine("Removendo valor de BA");
+            // estados.Remove("BA");
+            // Console.WriteLine();
+            
+            // foreach (KeyValuePair<string, string> item in estados)
+            // {
+            //     Console.WriteLine($"Chave: {item.Key}, Valor: {item.Value}");
+            // }
+            
+
+
+
+            //Coleções Específicas
+            //Stack
+
+            // Stack<string> pilhaLivros = new Stack<string>();
+
+            // pilhaLivros.Push(".NET"); // metodo push adiciona
+            // pilhaLivros.Push("DDD");
+            // pilhaLivros.Push("Codigo limpo");
+
+
+            // Console.Clear();
+            // Console.WriteLine($"Livros para ler: {pilhaLivros.Count}");
+            // while (pilhaLivros.Count > 0)
+            // {
+            //     Console.WriteLine("------------------------------");
+            //     Console.WriteLine($"Proximo livro para leitura: {pilhaLivros.Peek()}");
+            //     Console.WriteLine($"{pilhaLivros.Pop()} Lido com sucesso"); // metodo pop remove
+            //     Console.WriteLine("------------------------------");
+            // }
+
+            // Console.WriteLine($"Livros para ler: {pilhaLivros.Count}");
 
 
 
